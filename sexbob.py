@@ -48,6 +48,10 @@ async def on_message(message):
         bobImbed=discord.Embed(title='6: The dollar')
         bobImbed.set_image(url='https://media.discordapp.net/attachments/885991162417131522/892017343067193374/image0.gif')
         await message.reply(embed=bobImbed)
+    if message.content == "minor inconvenience":
+        bobImbed=discord.Embed(title='minor inconvenience')
+        bobImbed.set_image(url='https://images.app.goo.gl/xCQMH4tS7KyhSbpD7')
+        await message.reply(embed=bobImbed)
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(client.start(TOKEN))
